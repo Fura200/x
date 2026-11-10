@@ -15,11 +15,20 @@
         h1 {
             color: #007bff;
         }
+        /* 入力パーツを見やすくするための少しの隙間 */
+        input, button {
+            padding: 8px 12px;
+            font-size: 16px;
+            margin: 5px;
+        }
     </style>
 </head>
 <body>
-    <h1>タイトル</h1>
-    <p>内容</p>
+    <h1 id="title">名前を入力してね</h1>
+    
+    <!-- 入力するための箱とボタン -->
+    <input type="text" id="nameInput" placeholder="ここに名前を入力">
+    <button id="submitBtn">決定</button>
 
     <script src="script.js"></script>
 </body>
