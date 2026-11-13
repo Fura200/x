@@ -55,7 +55,20 @@ button:hover {
     transform: translateY(-1px); /* ほんの少し上に浮かす */
     box-shadow: 0 6px 12px rgba(52, 152, 219, 0.3);
 }
+.link-btn {
+    display: inline-block;       /* ボタンのように幅や高さを調整できるようにする */
+    padding: 10px 20px;          /* 内側の余白（上下10px、左右20px） */
+    background-color: #28a745;   /* ボタンの背景色（緑色） */
+    color: white;                /* 文字の色 */
+    text-decoration: none;       /* リンク特有の「下線」を消す */
+    border-radius: 5px;          /* 角を少し丸くする */
+    font-size: 16px;             /* 文字の大きさ */
+}
 
+/* マウスを乗せたときに少し色を濃くする */
+.link-btn:hover {
+    background-color: #218838;
+}
 /* ボタンを押した瞬間 */
 button:active {
     transform: translateY(1px); /* グッと押し込まれた動き */
